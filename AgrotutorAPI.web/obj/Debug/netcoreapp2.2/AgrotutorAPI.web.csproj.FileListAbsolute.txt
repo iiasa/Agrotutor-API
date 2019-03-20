@@ -1,0 +1,38 @@
+C:\Users\saad\source\repos\AgrotutorAPI\AgrotutorAPI.web\bin\Debug\netcoreapp2.2\AgrotutorAPI.web.deps.json
+C:\Users\saad\source\repos\AgrotutorAPI\AgrotutorAPI.web\bin\Debug\netcoreapp2.2\AgrotutorAPI.web.runtimeconfig.json
+C:\Users\saad\source\repos\AgrotutorAPI\AgrotutorAPI.web\bin\Debug\netcoreapp2.2\AgrotutorAPI.web.runtimeconfig.dev.json
+C:\Users\saad\source\repos\AgrotutorAPI\AgrotutorAPI.web\bin\Debug\netcoreapp2.2\AgrotutorAPI.web.dll
+C:\Users\saad\source\repos\AgrotutorAPI\AgrotutorAPI.web\bin\Debug\netcoreapp2.2\AgrotutorAPI.web.pdb
+C:\Users\saad\source\repos\AgrotutorAPI\AgrotutorAPI.web\bin\Debug\netcoreapp2.2\AfrotutorAPI.Domain.dll
+C:\Users\saad\source\repos\AgrotutorAPI\AgrotutorAPI.web\bin\Debug\netcoreapp2.2\AgrotutorAPI.Data.dll
+C:\Users\saad\source\repos\AgrotutorAPI\AgrotutorAPI.web\bin\Debug\netcoreapp2.2\AgrotutorAPI.Data.pdb
+C:\Users\saad\source\repos\AgrotutorAPI\AgrotutorAPI.web\bin\Debug\netcoreapp2.2\AfrotutorAPI.Domain.pdb
+C:\Users\saad\source\repos\AgrotutorAPI\AgrotutorAPI.web\obj\Debug\netcoreapp2.2\AgrotutorAPI.web.csprojAssemblyReference.cache
+C:\Users\saad\source\repos\AgrotutorAPI\AgrotutorAPI.web\obj\Debug\netcoreapp2.2\AgrotutorAPI.web.csproj.CoreCompileInputs.cache
+C:\Users\saad\source\repos\AgrotutorAPI\AgrotutorAPI.web\obj\Debug\netcoreapp2.2\AgrotutorAPI.web.RazorAssemblyInfo.cache
+C:\Users\saad\source\repos\AgrotutorAPI\AgrotutorAPI.web\obj\Debug\netcoreapp2.2\AgrotutorAPI.web.RazorAssemblyInfo.cs
+C:\Users\saad\source\repos\AgrotutorAPI\AgrotutorAPI.web\obj\Debug\netcoreapp2.2\AgrotutorAPI.web.AssemblyInfoInputs.cache
+C:\Users\saad\source\repos\AgrotutorAPI\AgrotutorAPI.web\obj\Debug\netcoreapp2.2\AgrotutorAPI.web.AssemblyInfo.cs
+C:\Users\saad\source\repos\AgrotutorAPI\AgrotutorAPI.web\obj\Debug\netcoreapp2.2\AgrotutorAPI.web.RazorTargetAssemblyInfo.cache
+C:\Users\saad\source\repos\AgrotutorAPI\AgrotutorAPI.web\obj\Debug\netcoreapp2.2\AgrotutorAPI.web.csproj.CopyComplete
+C:\Users\saad\source\repos\AgrotutorAPI\AgrotutorAPI.web\obj\Debug\netcoreapp2.2\AgrotutorAPI.web.dll
+C:\Users\saad\source\repos\AgrotutorAPI\AgrotutorAPI.web\obj\Debug\netcoreapp2.2\AgrotutorAPI.web.pdb
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web\bin\Debug\netcoreapp2.2\AgrotutorAPI.web.deps.json
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web\bin\Debug\netcoreapp2.2\AgrotutorAPI.web.runtimeconfig.json
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web\bin\Debug\netcoreapp2.2\AgrotutorAPI.web.runtimeconfig.dev.json
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web\bin\Debug\netcoreapp2.2\AgrotutorAPI.web.dll
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web\bin\Debug\netcoreapp2.2\AgrotutorAPI.web.pdb
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web\bin\Debug\netcoreapp2.2\AgrotutorAPI.Data.dll
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web\bin\Debug\netcoreapp2.2\AgrotutorAPI.Domain.dll
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web\bin\Debug\netcoreapp2.2\AgrotutorAPI.Data.pdb
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web\bin\Debug\netcoreapp2.2\AgrotutorAPI.Domain.pdb
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web\obj\Debug\netcoreapp2.2\AgrotutorAPI.web.csprojAssemblyReference.cache
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web\obj\Debug\netcoreapp2.2\AgrotutorAPI.web.csproj.CoreCompileInputs.cache
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web\obj\Debug\netcoreapp2.2\AgrotutorAPI.web.RazorAssemblyInfo.cache
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web\obj\Debug\netcoreapp2.2\AgrotutorAPI.web.RazorAssemblyInfo.cs
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web\obj\Debug\netcoreapp2.2\AgrotutorAPI.web.AssemblyInfoInputs.cache
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web\obj\Debug\netcoreapp2.2\AgrotutorAPI.web.AssemblyInfo.cs
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web\obj\Debug\netcoreapp2.2\AgrotutorAPI.web.RazorTargetAssemblyInfo.cache
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web\obj\Debug\netcoreapp2.2\AgrotutorAPI.web.csproj.CopyComplete
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web\obj\Debug\netcoreapp2.2\AgrotutorAPI.web.dll
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web\obj\Debug\netcoreapp2.2\AgrotutorAPI.web.pdb

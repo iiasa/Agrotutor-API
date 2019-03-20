@@ -1,0 +1,16 @@
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AfrotutorAPI.Domain\bin\Debug\netstandard2.0\AgrotutorAPI.Domain.deps.json
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AfrotutorAPI.Domain\bin\Debug\netstandard2.0\AgrotutorAPI.Domain.dll
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AfrotutorAPI.Domain\bin\Debug\netstandard2.0\AgrotutorAPI.Domain.pdb
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AfrotutorAPI.Domain\obj\Debug\netstandard2.0\AgrotutorAPI.Domain.csproj.CoreCompileInputs.cache
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AfrotutorAPI.Domain\obj\Debug\netstandard2.0\AgrotutorAPI.Domain.AssemblyInfoInputs.cache
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AfrotutorAPI.Domain\obj\Debug\netstandard2.0\AgrotutorAPI.Domain.AssemblyInfo.cs
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AfrotutorAPI.Domain\obj\Debug\netstandard2.0\AgrotutorAPI.Domain.dll
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AfrotutorAPI.Domain\obj\Debug\netstandard2.0\AgrotutorAPI.Domain.pdb
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.Domain\bin\Debug\netstandard2.0\AgrotutorAPI.Domain.deps.json
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.Domain\bin\Debug\netstandard2.0\AgrotutorAPI.Domain.dll
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.Domain\bin\Debug\netstandard2.0\AgrotutorAPI.Domain.pdb
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.Domain\obj\Debug\netstandard2.0\AgrotutorAPI.Domain.csproj.CoreCompileInputs.cache
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.Domain\obj\Debug\netstandard2.0\AgrotutorAPI.Domain.AssemblyInfoInputs.cache
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.Domain\obj\Debug\netstandard2.0\AgrotutorAPI.Domain.AssemblyInfo.cs
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.Domain\obj\Debug\netstandard2.0\AgrotutorAPI.Domain.dll
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.Domain\obj\Debug\netstandard2.0\AgrotutorAPI.Domain.pdb

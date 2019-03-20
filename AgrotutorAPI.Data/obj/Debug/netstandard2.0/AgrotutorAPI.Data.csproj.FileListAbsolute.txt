@@ -1,0 +1,24 @@
+C:\Users\saad\source\repos\AgrotutorAPI\AgrotutorAPI.Data\bin\Debug\netstandard2.0\AgrotutorAPI.Data.deps.json
+C:\Users\saad\source\repos\AgrotutorAPI\AgrotutorAPI.Data\bin\Debug\netstandard2.0\AgrotutorAPI.Data.dll
+C:\Users\saad\source\repos\AgrotutorAPI\AgrotutorAPI.Data\obj\Debug\netstandard2.0\AgrotutorAPI.Data.csprojAssemblyReference.cache
+C:\Users\saad\source\repos\AgrotutorAPI\AgrotutorAPI.Data\obj\Debug\netstandard2.0\AgrotutorAPI.Data.csproj.CoreCompileInputs.cache
+C:\Users\saad\source\repos\AgrotutorAPI\AgrotutorAPI.Data\obj\Debug\netstandard2.0\AgrotutorAPI.Data.AssemblyInfoInputs.cache
+C:\Users\saad\source\repos\AgrotutorAPI\AgrotutorAPI.Data\obj\Debug\netstandard2.0\AgrotutorAPI.Data.AssemblyInfo.cs
+C:\Users\saad\source\repos\AgrotutorAPI\AgrotutorAPI.Data\bin\Debug\netstandard2.0\AfrotutorAPI.Domain.dll
+C:\Users\saad\source\repos\AgrotutorAPI\AgrotutorAPI.Data\bin\Debug\netstandard2.0\AgrotutorAPI.Data.pdb
+C:\Users\saad\source\repos\AgrotutorAPI\AgrotutorAPI.Data\bin\Debug\netstandard2.0\AfrotutorAPI.Domain.pdb
+C:\Users\saad\source\repos\AgrotutorAPI\AgrotutorAPI.Data\obj\Debug\netstandard2.0\AgrotutorAPI.Data.csproj.CopyComplete
+C:\Users\saad\source\repos\AgrotutorAPI\AgrotutorAPI.Data\obj\Debug\netstandard2.0\AgrotutorAPI.Data.dll
+C:\Users\saad\source\repos\AgrotutorAPI\AgrotutorAPI.Data\obj\Debug\netstandard2.0\AgrotutorAPI.Data.pdb
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.Data\bin\Debug\netstandard2.0\AgrotutorAPI.Data.deps.json
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.Data\bin\Debug\netstandard2.0\AgrotutorAPI.Data.dll
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.Data\bin\Debug\netstandard2.0\AgrotutorAPI.Data.pdb
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.Data\bin\Debug\netstandard2.0\AgrotutorAPI.Domain.dll
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.Data\bin\Debug\netstandard2.0\AgrotutorAPI.Domain.pdb
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.Data\obj\Debug\netstandard2.0\AgrotutorAPI.Data.csprojAssemblyReference.cache
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.Data\obj\Debug\netstandard2.0\AgrotutorAPI.Data.csproj.CoreCompileInputs.cache
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.Data\obj\Debug\netstandard2.0\AgrotutorAPI.Data.AssemblyInfoInputs.cache
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.Data\obj\Debug\netstandard2.0\AgrotutorAPI.Data.AssemblyInfo.cs
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.Data\obj\Debug\netstandard2.0\AgrotutorAPI.Data.csproj.CopyComplete
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.Data\obj\Debug\netstandard2.0\AgrotutorAPI.Data.dll
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.Data\obj\Debug\netstandard2.0\AgrotutorAPI.Data.pdb
