@@ -4,6 +4,7 @@ using AgrotutorAPI.Domain;
 using AgrotutorAPI.web.Repositories;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace AgrotutorAPI.web.Controllers
 {
@@ -25,6 +26,7 @@ namespace AgrotutorAPI.web.Controllers
         [Route("")]
         public IActionResult Plots()
         {
+            var res = JsonConvert.SerializeObject(new PlotDto());
             var plotsList = _plotRepository.GetPlots();
             var result = Mapper.Map<IEnumerable<PlotDto>>(plotsList);
             return Ok(result);
@@ -36,13 +38,14 @@ namespace AgrotutorAPI.web.Controllers
         {
             var plotRes = _plotRepository.GetPlotById(plotId);
             if (plotRes == null) return NotFound();
-
+       
             var result = Mapper.Map<PlotDto>(plotRes);
             return Ok(result);
         }
 
         // POST api/Plots
         [HttpPost]
+        [Route("CreatePlot")]
         public ActionResult CreatePlot([FromBody] PlotDto plotDto)
         {
 

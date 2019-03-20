@@ -14,3 +14,4 @@ H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.Domain\obj\Debug\netstan
 H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.Domain\obj\Debug\netstandard2.0\AgrotutorAPI.Domain.AssemblyInfo.cs
 H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.Domain\obj\Debug\netstandard2.0\AgrotutorAPI.Domain.dll
 H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.Domain\obj\Debug\netstandard2.0\AgrotutorAPI.Domain.pdb
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.Domain\obj\Debug\netstandard2.0\AgrotutorAPI.Domain.csprojAssemblyReference.cache

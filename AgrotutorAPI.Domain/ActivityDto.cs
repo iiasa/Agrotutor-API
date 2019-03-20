@@ -23,5 +23,9 @@ namespace AgrotutorAPI.Domain
         public string Sown { get; set; }
         public double WeightOfSeeds { get; set; }
         public string Yield { get; set; }
+        public string Comment { get; set; }
+        public int? SellingPrice { get; set; }
+        public int? PlotArea { get; set; }
+        public string AmountSold { get; set; }
     }
 }

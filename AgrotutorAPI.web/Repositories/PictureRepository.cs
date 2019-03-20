@@ -30,7 +30,7 @@ namespace AgrotutorAPI.web.Repositories
         }
         public string GetDirectoryPath()
         {
-            var webRoot = _env.WebRootPath;
+            var webRoot = _env.ContentRootPath;
             var pathWithFolderName = System.IO.Path.Combine(webRoot, "Images");
 
 
@@ -54,10 +54,10 @@ namespace AgrotutorAPI.web.Repositories
         {
             foreach (var item in mediaItems)
             {
-                var imagePath = pathWithFolderName + Guid.NewGuid() + ".png";
+                var imagePath = pathWithFolderName +@"\"+ Guid.NewGuid() + ".png";
                 //Save the Byte Array as File.
-
-                File.WriteAllBytes(imagePath, item.ImageBytes);
+                byte[] bytes = Convert.FromBase64String(item.DataBase64String);
+                File.WriteAllBytes(imagePath, bytes);
                 item.Path = imagePath;
             }
 

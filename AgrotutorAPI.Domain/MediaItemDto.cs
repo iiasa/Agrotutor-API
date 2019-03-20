@@ -6,6 +6,6 @@ namespace AgrotutorAPI.Domain
     {
         public Guid Id { get; set; }
         public string Path { get; set; }
-        public byte[] ImageBytes { get; set; }
+        public string DataBase64String { get; set; }
     }
 }

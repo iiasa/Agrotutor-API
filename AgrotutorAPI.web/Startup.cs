@@ -30,6 +30,7 @@ namespace AgrotutorAPI.web
                 o.UseNpgsql(Configuration.GetConnectionString("AgrotutorApiDatabase")));
 
             services.AddScoped<IPlotRepository, PlotRepository>();
+            services.AddScoped<IPictureRepository, PictureRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
