@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using AgrotutorAPI.Data.Entities;
+using AgrotutorAPI.Data.Contract;
 using AgrotutorAPI.Domain;
-using AgrotutorAPI.web.Repositories;
+using AgrotutorAPI.Dto;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -48,11 +48,12 @@ namespace AgrotutorAPI.web.Controllers
         [Route("CreatePlot")]
         public ActionResult CreatePlot([FromBody] PlotDto plotDto)
         {
+            var finalPlot = Mapper.Map<Plot>(plotDto);
 
-          var result=  _pictureRepository.UploadImages(plotDto.MediaItems);
+            var result=  _pictureRepository.UploadImages(finalPlot.MediaItems);
             if (result)
             {
-                var finalPlot = Mapper.Map<Plot>(plotDto);
+                
 
                 _plotRepository.AddPlot(finalPlot);
                 if (!_plotRepository.Save())

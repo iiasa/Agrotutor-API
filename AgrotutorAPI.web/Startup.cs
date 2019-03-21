@@ -1,7 +1,9 @@
-﻿using AgrotutorAPI.Data;
-using AgrotutorAPI.Data.Entities;
+﻿
+using AgrotutorAPI.Data.Contract;
+using AgrotutorAPI.Data.Postgresql;
+using AgrotutorAPI.Data.Postgresql.Repositories;
 using AgrotutorAPI.Domain;
-using AgrotutorAPI.web.Repositories;
+using AgrotutorAPI.Dto;
 using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;

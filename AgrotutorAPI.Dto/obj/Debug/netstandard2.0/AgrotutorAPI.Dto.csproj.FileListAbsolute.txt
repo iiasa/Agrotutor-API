@@ -1,0 +1,9 @@
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Dto\bin\Debug\netstandard2.0\AgrotutorAPI.Dto.deps.json
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Dto\bin\Debug\netstandard2.0\AgrotutorAPI.Dto.dll
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Dto\bin\Debug\netstandard2.0\AgrotutorAPI.Dto.pdb
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Dto\obj\Debug\netstandard2.0\AgrotutorAPI.Dto.csprojResolveAssemblyReference.cache
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Dto\obj\Debug\netstandard2.0\AgrotutorAPI.Dto.csproj.CoreCompileInputs.cache
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Dto\obj\Debug\netstandard2.0\AgrotutorAPI.Dto.AssemblyInfoInputs.cache
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Dto\obj\Debug\netstandard2.0\AgrotutorAPI.Dto.AssemblyInfo.cs
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Dto\obj\Debug\netstandard2.0\AgrotutorAPI.Dto.dll
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Dto\obj\Debug\netstandard2.0\AgrotutorAPI.Dto.pdb

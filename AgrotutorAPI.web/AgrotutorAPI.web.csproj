@@ -12,7 +12,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AgrotutorAPI.Data\AgrotutorAPI.Data.csproj" />
+    <ProjectReference Include="..\AgrotutorAPI.Data.Contract\AgrotutorAPI.Data.Contract.csproj" />
+    <ProjectReference Include="..\AgrotutorAPI.Data.Postgresql\AgrotutorAPI.Data.Postgresql.csproj" />
+    <ProjectReference Include="..\AgrotutorAPI.Dto\AgrotutorAPI.Dto.csproj" />
   </ItemGroup>
 
 </Project>

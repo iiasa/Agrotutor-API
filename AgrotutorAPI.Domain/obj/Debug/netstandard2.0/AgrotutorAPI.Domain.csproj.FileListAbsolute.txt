@@ -15,3 +15,14 @@ H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.Domain\obj\Debug\netstan
 H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.Domain\obj\Debug\netstandard2.0\AgrotutorAPI.Domain.dll
 H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.Domain\obj\Debug\netstandard2.0\AgrotutorAPI.Domain.pdb
 H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.Domain\obj\Debug\netstandard2.0\AgrotutorAPI.Domain.csprojAssemblyReference.cache
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Domain\bin\Debug\netstandard2.0\AgrotutorAPI.Domain.deps.json
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Domain\bin\Debug\netstandard2.0\AgrotutorAPI.Domain.dll
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Domain\bin\Debug\netstandard2.0\AgrotutorAPI.Domain.pdb
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Domain\bin\Debug\netstandard2.0\AgrotutorAPI.Dto.dll
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Domain\bin\Debug\netstandard2.0\AgrotutorAPI.Dto.pdb
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Domain\obj\Debug\netstandard2.0\AgrotutorAPI.Domain.csprojResolveAssemblyReference.cache
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Domain\obj\Debug\netstandard2.0\AgrotutorAPI.Domain.csproj.CoreCompileInputs.cache
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Domain\obj\Debug\netstandard2.0\AgrotutorAPI.Domain.AssemblyInfoInputs.cache
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Domain\obj\Debug\netstandard2.0\AgrotutorAPI.Domain.AssemblyInfo.cs
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Domain\obj\Debug\netstandard2.0\AgrotutorAPI.Domain.dll
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Domain\obj\Debug\netstandard2.0\AgrotutorAPI.Domain.pdb

@@ -1,0 +1,17 @@
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Data.Postgresql\bin\Debug\netstandard2.0\AgrotutorAPI.Data.Postgresql.deps.json
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Data.Postgresql\bin\Debug\netstandard2.0\AgrotutorAPI.Data.Postgresql.dll
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Data.Postgresql\bin\Debug\netstandard2.0\AgrotutorAPI.Data.Postgresql.pdb
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Data.Postgresql\bin\Debug\netstandard2.0\AgrotutorAPI.Data.Contract.dll
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Data.Postgresql\bin\Debug\netstandard2.0\AgrotutorAPI.Domain.dll
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Data.Postgresql\bin\Debug\netstandard2.0\AgrotutorAPI.Dto.dll
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Data.Postgresql\bin\Debug\netstandard2.0\Microsoft.AspNetCore.Hosting.Abstractions.dll
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Data.Postgresql\bin\Debug\netstandard2.0\AgrotutorAPI.Data.Contract.pdb
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Data.Postgresql\bin\Debug\netstandard2.0\AgrotutorAPI.Domain.pdb
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Data.Postgresql\bin\Debug\netstandard2.0\AgrotutorAPI.Dto.pdb
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Data.Postgresql\bin\Debug\netstandard2.0\Microsoft.AspNetCore.Hosting.Abstractions.xml
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Data.Postgresql\obj\Debug\netstandard2.0\AgrotutorAPI.Data.Postgresql.csprojResolveAssemblyReference.cache
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Data.Postgresql\obj\Debug\netstandard2.0\AgrotutorAPI.Data.Postgresql.csproj.CoreCompileInputs.cache
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Data.Postgresql\obj\Debug\netstandard2.0\AgrotutorAPI.Data.Postgresql.AssemblyInfoInputs.cache
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Data.Postgresql\obj\Debug\netstandard2.0\AgrotutorAPI.Data.Postgresql.AssemblyInfo.cs
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Data.Postgresql\obj\Debug\netstandard2.0\AgrotutorAPI.Data.Postgresql.dll
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.Data.Postgresql\obj\Debug\netstandard2.0\AgrotutorAPI.Data.Postgresql.pdb

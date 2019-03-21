@@ -1,0 +1,4 @@
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.web\obj\Debug\netcoreapp2.0\AgrotutorAPI.web.csprojResolveAssemblyReference.cache
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.web\obj\Debug\netcoreapp2.0\AgrotutorAPI.web.csproj.CoreCompileInputs.cache
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.web\obj\Debug\netcoreapp2.0\AgrotutorAPI.web.AssemblyInfoInputs.cache
+E:\IIASA Work\Agrotutor-API\AgrotutorAPI.web\obj\Debug\netcoreapp2.0\AgrotutorAPI.web.AssemblyInfo.cs
