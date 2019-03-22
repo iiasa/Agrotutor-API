@@ -22,9 +22,7 @@ H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web\bin\Debug\netcoreapp
 H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web\bin\Debug\netcoreapp2.2\AgrotutorAPI.web.runtimeconfig.dev.json
 H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web\bin\Debug\netcoreapp2.2\AgrotutorAPI.web.dll
 H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web\bin\Debug\netcoreapp2.2\AgrotutorAPI.web.pdb
-H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web\bin\Debug\netcoreapp2.2\AgrotutorAPI.Data.dll
 H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web\bin\Debug\netcoreapp2.2\AgrotutorAPI.Domain.dll
-H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web\bin\Debug\netcoreapp2.2\AgrotutorAPI.Data.pdb
 H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web\bin\Debug\netcoreapp2.2\AgrotutorAPI.Domain.pdb
 H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web\obj\Debug\netcoreapp2.2\AgrotutorAPI.web.csprojAssemblyReference.cache
 H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web\obj\Debug\netcoreapp2.2\AgrotutorAPI.web.csproj.CoreCompileInputs.cache
@@ -58,3 +56,9 @@ E:\IIASA Work\Agrotutor-API\AgrotutorAPI.web\bin\Debug\netcoreapp2.2\AgrotutorAP
 E:\IIASA Work\Agrotutor-API\AgrotutorAPI.web\obj\Debug\netcoreapp2.2\AgrotutorAPI.web.RazorTargetAssemblyInfo.cache
 E:\IIASA Work\Agrotutor-API\AgrotutorAPI.web\obj\Debug\netcoreapp2.2\AgrotutorAPI.web.dll
 E:\IIASA Work\Agrotutor-API\AgrotutorAPI.web\obj\Debug\netcoreapp2.2\AgrotutorAPI.web.pdb
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web\bin\Debug\netcoreapp2.2\AgrotutorAPI.Data.Contract.dll
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web\bin\Debug\netcoreapp2.2\AgrotutorAPI.Data.Postgresql.dll
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web\bin\Debug\netcoreapp2.2\AgrotutorAPI.Dto.dll
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web\bin\Debug\netcoreapp2.2\AgrotutorAPI.Data.Contract.pdb
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web\bin\Debug\netcoreapp2.2\AgrotutorAPI.Data.Postgresql.pdb
+H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web\bin\Debug\netcoreapp2.2\AgrotutorAPI.Dto.pdb

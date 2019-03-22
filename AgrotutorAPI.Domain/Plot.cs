@@ -30,5 +30,6 @@ namespace AgrotutorAPI.Domain
         public bool Irrigated { get; set; }
 
         public  List<MediaItem> MediaItems { get; set; }
+        public string DeviceID { get; set; }
     }
 }

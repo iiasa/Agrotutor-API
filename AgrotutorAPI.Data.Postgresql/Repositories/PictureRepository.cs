@@ -30,21 +30,13 @@ namespace AgrotutorAPI.Data.Postgresql.Repositories
         public string GetDirectoryPath()
         {
             var webRoot = _env.ContentRootPath;
-            var pathWithFolderName = System.IO.Path.Combine(webRoot, "Images");
+            var pathWithFolderName = Path.Combine(webRoot, "Images");
 
 
             if (!Directory.Exists(pathWithFolderName))
             {
                 // Try to create the directory.
-                DirectoryInfo di = Directory.CreateDirectory(pathWithFolderName);
-                if (!Directory.Exists(pathWithFolderName))
-                {
-                    Directory.CreateDirectory(pathWithFolderName);
-                }
-
-               
-
-
+              Directory.CreateDirectory(pathWithFolderName);
             }
             return pathWithFolderName;
         }
@@ -53,7 +45,7 @@ namespace AgrotutorAPI.Data.Postgresql.Repositories
         {
             foreach (var item in mediaItems)
             {
-                var imagePath = pathWithFolderName +@"\"+ Guid.NewGuid() + ".png";
+                var imagePath = pathWithFolderName +@"\"+ item.Id+ ".png";
                 //Save the Byte Array as File.
                 byte[] bytes = Convert.FromBase64String(item.DataBase64String);
                 File.WriteAllBytes(imagePath, bytes);
