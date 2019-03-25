@@ -21,6 +21,9 @@ namespace AgrotutorAPI.Test
       //  DbContextOptions<AgrotutorContext> _dbInMemoryOption;
         private  List<MediaItem> _mediaItemList;
         private  Plot _newPlot;
+        private Position _position;
+        private List<Position> _listPositions_test1;
+        private List<Position> _listPositions_test2;
         private  Plot _newPlotWithImages;
         private  PictureRepository _pictureRepository;
 
@@ -47,21 +50,26 @@ namespace AgrotutorAPI.Test
                 ClimateType = ClimateTypeDto.Cold,
                 Irrigated = false,
                 Name = "Test1",
+                Position = _position,
                 MaturityType = MaturityTypeDto.Early,
                 Activities = new List<Activity> { new Activity { Id = 3, Name = "ActivityTest1",
                     ActivityType = ActivityTypeDto.Commercialization, AmountApplied = "AmountAppliedTest1", AmountSold = "AmountSoldTest1",
                     Comment = "CommentTest", AppliedProduct = "AppliedProductTest1", Cost = 10, Date = DateTime.Now, Dose = 10, ParcelId = "3",
                     NumberOfSeeds = 10, Price = 100, ProductObtained = "ProductObtainedTest1", Sown = "SownTest1", SellingPrice = 50, WeightOfSeeds = 200,
-                    Yield = "Yield1", PlotArea = 1 } }
+                    Yield = "Yield1", PlotArea = 1 } },
+                Delineation = new List<Position> {new Position { Accuracy = 1, Latitude = 48.072875, Longitude = 16.361187, Timestamp = DateTimeOffset.Now },
+                    new Position { Accuracy = 1, Latitude = 48.079812, Longitude = 16.362887, Timestamp = DateTimeOffset.Now } }
             };
 
             _newPlotWithImages = new Plot
             {
                 Id = 3,
                 DeviceID = "deviceIDTest",
+                
                 CropType = CropTypeDto.Alfalfa,
                 ClimateType = ClimateTypeDto.Cold,
                 Irrigated = false,
+                Position = _position,
                 Name = "Test1",
                 MaturityType = MaturityTypeDto.Early,
                 Activities = new List<Activity> { new Activity { Id = 3, Name = "ActivityTest1",
@@ -69,9 +77,19 @@ namespace AgrotutorAPI.Test
                     Comment = "CommentTest", AppliedProduct = "AppliedProductTest1", Cost = 10, Date = DateTime.Now, Dose = 10, ParcelId = "3",
                     NumberOfSeeds = 10, Price = 100, ProductObtained = "ProductObtainedTest1", Sown = "SownTest1", SellingPrice = 50, WeightOfSeeds = 200,
                     Yield = "Yield1", PlotArea = 1 } },
-                MediaItems = _mediaItemList
+                MediaItems = _mediaItemList,
+                Delineation = new List<Position> {new Position { Accuracy = 1, Latitude = 48.072888, Longitude = 16.361117, Timestamp = DateTimeOffset.Now },
+                    new Position { Accuracy = 1, Latitude = 48.079227, Longitude = 16.362887, Timestamp = DateTimeOffset.Now } }
             };
 
+            _position = new Position
+                {Accuracy = 1, Latitude = 48.072294, Longitude = 16.361882, Timestamp = DateTimeOffset.Now};
+            _listPositions_test1 = new List<Position>
+            { new Position { Accuracy = .5, Latitude = 48.072875, Longitude = 16.361187, Timestamp = DateTimeOffset.Now },
+                new Position { Accuracy = 1.5, Latitude = 48.079812, Longitude = 16.362887, Timestamp = DateTimeOffset.Now } };
+            _listPositions_test2 = new List<Position>
+            { new Position { Accuracy = .5, Latitude = 48.072875, Longitude = 16.361187, Timestamp = DateTimeOffset.Now },
+                new Position { Accuracy = 1.5, Latitude = 48.079812, Longitude = 16.362887, Timestamp = DateTimeOffset.Now } };
             //SeedData();
         }
         private void IntializaPictureRepository()
@@ -98,6 +116,7 @@ namespace AgrotutorAPI.Test
                             DeviceID="deviceIDTest",
                             CropType = CropTypeDto.Alfalfa,
                             ClimateType = ClimateTypeDto.Cold,
+                            Position = _position,
                             Irrigated = false,
                             Name = "Test1",
                             MaturityType = MaturityTypeDto.Early,
@@ -125,7 +144,9 @@ namespace AgrotutorAPI.Test
                                     Yield = "Yield1",
                                     PlotArea = 1
                                 }
-                            }
+                            },
+                            MediaItems = _mediaItemList,
+                            Delineation = _listPositions_test1
                         },
                         new Plot
                         {
@@ -133,6 +154,7 @@ namespace AgrotutorAPI.Test
                             CropType = CropTypeDto.Amaranth,
                             ClimateType = ClimateTypeDto.TemperedSubtropical,
                             Irrigated = true,
+                            Position = _position,
                             Name = "Test2",
                             MaturityType = MaturityTypeDto.Intermediate,
                             Activities = new List<Activity>
@@ -159,7 +181,9 @@ namespace AgrotutorAPI.Test
                                     Yield = "Yield2",
                                     PlotArea = 1
                                 }
-                            }
+                            },
+                            MediaItems = _mediaItemList,
+                            Delineation = _listPositions_test2
                         });
                     context.SaveChanges();
                 }
