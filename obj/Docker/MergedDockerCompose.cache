@@ -1,7 +1,7 @@
 services:
   agrotutorapi.web:
     build:
-      context: H:\MyDocuments\IIASA Projects\AgrotutorAPI
+      context: C:\AgrotutorAPI
       dockerfile: AgrotutorAPI.web/Dockerfile
     environment:
       ASPNETCORE_ENVIRONMENT: Development

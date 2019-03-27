@@ -3149,11 +3149,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\MyDocuments\\IIASA Projects\\AgrotutorAPI\\AgrotutorAPI.Data.Postgresql\\AgrotutorAPI.Data.Postgresql.csproj",
+      "projectUniqueName": "C:\\AgrotutorAPI\\AgrotutorAPI.Data.Postgresql\\AgrotutorAPI.Data.Postgresql.csproj",
       "projectName": "AgrotutorAPI.Data.Postgresql",
-      "projectPath": "H:\\MyDocuments\\IIASA Projects\\AgrotutorAPI\\AgrotutorAPI.Data.Postgresql\\AgrotutorAPI.Data.Postgresql.csproj",
+      "projectPath": "C:\\AgrotutorAPI\\AgrotutorAPI.Data.Postgresql\\AgrotutorAPI.Data.Postgresql.csproj",
       "packagesPath": "C:\\Users\\saad\\.nuget\\packages\\",
-      "outputPath": "H:\\MyDocuments\\IIASA Projects\\AgrotutorAPI\\AgrotutorAPI.Data.Postgresql\\obj\\",
+      "outputPath": "C:\\AgrotutorAPI\\AgrotutorAPI.Data.Postgresql\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3173,11 +3173,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "H:\\MyDocuments\\IIASA Projects\\AgrotutorAPI\\AgrotutorAPI.Data.Contract\\AgrotutorAPI.Data.Contract.csproj": {
-              "projectPath": "H:\\MyDocuments\\IIASA Projects\\AgrotutorAPI\\AgrotutorAPI.Data.Contract\\AgrotutorAPI.Data.Contract.csproj"
+            "C:\\AgrotutorAPI\\AgrotutorAPI.Data.Contract\\AgrotutorAPI.Data.Contract.csproj": {
+              "projectPath": "C:\\AgrotutorAPI\\AgrotutorAPI.Data.Contract\\AgrotutorAPI.Data.Contract.csproj"
             },
-            "H:\\MyDocuments\\IIASA Projects\\AgrotutorAPI\\AgrotutorAPI.Domain\\AgrotutorAPI.Domain.csproj": {
-              "projectPath": "H:\\MyDocuments\\IIASA Projects\\AgrotutorAPI\\AgrotutorAPI.Domain\\AgrotutorAPI.Domain.csproj"
+            "C:\\AgrotutorAPI\\AgrotutorAPI.Domain\\AgrotutorAPI.Domain.csproj": {
+              "projectPath": "C:\\AgrotutorAPI\\AgrotutorAPI.Domain\\AgrotutorAPI.Domain.csproj"
             }
           }
         }

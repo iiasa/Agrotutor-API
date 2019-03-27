@@ -48,21 +48,29 @@ namespace AgrotutorAPI.web.Controllers
         [Route("CreatePlot")]
         public ActionResult CreatePlot([FromBody] PlotDto plotDto)
         {
-            var finalPlot = Mapper.Map<Plot>(plotDto);
-
-            var result=  _pictureRepository.UploadImages(finalPlot.MediaItems);
-            if (result)
+            if (!ModelState.IsValid)
             {
-                
-
-                _plotRepository.AddPlot(finalPlot);
-                if (!_plotRepository.Save())
-                    return StatusCode(500, "A problem happend while handling your request");
-
-                var createdPlot = Mapper.Map<PlotDto>(finalPlot);
-                return CreatedAtRoute("GetPlotsById", new {plotId = createdPlot.Id}, createdPlot);
+                return BadRequest(ModelState);
             }
-              return StatusCode(500, "A problem happend while handling your request");
+            var finalPlot = Mapper.Map<Plot>(plotDto);
+            if (finalPlot.MediaItems.Count > 0)
+            {
+                var result = _pictureRepository.UploadImages(finalPlot.MediaItems);
+                if (result)
+                {
+
+
+                    _plotRepository.AddPlot(finalPlot);
+                    if (!_plotRepository.Save())
+                        return StatusCode(500, "A problem happend while handling your request");
+
+                    var createdPlot = Mapper.Map<PlotDto>(finalPlot);
+                    return CreatedAtRoute("GetPlotsById", new {plotId = createdPlot.Id}, createdPlot);
+                }
+
+                return StatusCode(500, "A problem happend while handling your request");
+            }
+            return StatusCode(500, "No pictures are included");
         }
 
         // PUT api/Plots/5

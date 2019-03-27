@@ -184,11 +184,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\MyDocuments\\IIASA Projects\\AgrotutorAPI\\AgrotutorAPI.Dto\\AgrotutorAPI.Dto.csproj",
+      "projectUniqueName": "C:\\AgrotutorAPI\\AgrotutorAPI.Dto\\AgrotutorAPI.Dto.csproj",
       "projectName": "AgrotutorAPI.Dto",
-      "projectPath": "H:\\MyDocuments\\IIASA Projects\\AgrotutorAPI\\AgrotutorAPI.Dto\\AgrotutorAPI.Dto.csproj",
+      "projectPath": "C:\\AgrotutorAPI\\AgrotutorAPI.Dto\\AgrotutorAPI.Dto.csproj",
       "packagesPath": "C:\\Users\\saad\\.nuget\\packages\\",
-      "outputPath": "H:\\MyDocuments\\IIASA Projects\\AgrotutorAPI\\AgrotutorAPI.Dto\\obj\\",
+      "outputPath": "C:\\AgrotutorAPI\\AgrotutorAPI.Dto\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -12311,11 +12311,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\MyDocuments\\IIASA Projects\\AgrotutorAPI\\AgrotutorAPI.web\\AgrotutorAPI.web.csproj",
+      "projectUniqueName": "C:\\AgrotutorAPI\\AgrotutorAPI.web\\AgrotutorAPI.web.csproj",
       "projectName": "AgrotutorAPI.web",
-      "projectPath": "H:\\MyDocuments\\IIASA Projects\\AgrotutorAPI\\AgrotutorAPI.web\\AgrotutorAPI.web.csproj",
+      "projectPath": "C:\\AgrotutorAPI\\AgrotutorAPI.web\\AgrotutorAPI.web.csproj",
       "packagesPath": "C:\\Users\\saad\\.nuget\\packages\\",
-      "outputPath": "H:\\MyDocuments\\IIASA Projects\\AgrotutorAPI\\AgrotutorAPI.web\\obj\\",
+      "outputPath": "C:\\AgrotutorAPI\\AgrotutorAPI.web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12335,14 +12335,14 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "H:\\MyDocuments\\IIASA Projects\\AgrotutorAPI\\AgrotutorAPI.Data.Contract\\AgrotutorAPI.Data.Contract.csproj": {
-              "projectPath": "H:\\MyDocuments\\IIASA Projects\\AgrotutorAPI\\AgrotutorAPI.Data.Contract\\AgrotutorAPI.Data.Contract.csproj"
+            "C:\\AgrotutorAPI\\AgrotutorAPI.Data.Contract\\AgrotutorAPI.Data.Contract.csproj": {
+              "projectPath": "C:\\AgrotutorAPI\\AgrotutorAPI.Data.Contract\\AgrotutorAPI.Data.Contract.csproj"
             },
-            "H:\\MyDocuments\\IIASA Projects\\AgrotutorAPI\\AgrotutorAPI.Data.Postgresql\\AgrotutorAPI.Data.Postgresql.csproj": {
-              "projectPath": "H:\\MyDocuments\\IIASA Projects\\AgrotutorAPI\\AgrotutorAPI.Data.Postgresql\\AgrotutorAPI.Data.Postgresql.csproj"
+            "C:\\AgrotutorAPI\\AgrotutorAPI.Data.Postgresql\\AgrotutorAPI.Data.Postgresql.csproj": {
+              "projectPath": "C:\\AgrotutorAPI\\AgrotutorAPI.Data.Postgresql\\AgrotutorAPI.Data.Postgresql.csproj"
             },
-            "H:\\MyDocuments\\IIASA Projects\\AgrotutorAPI\\AgrotutorAPI.Dto\\AgrotutorAPI.Dto.csproj": {
-              "projectPath": "H:\\MyDocuments\\IIASA Projects\\AgrotutorAPI\\AgrotutorAPI.Dto\\AgrotutorAPI.Dto.csproj"
+            "C:\\AgrotutorAPI\\AgrotutorAPI.Dto\\AgrotutorAPI.Dto.csproj": {
+              "projectPath": "C:\\AgrotutorAPI\\AgrotutorAPI.Dto\\AgrotutorAPI.Dto.csproj"
             }
           }
         }

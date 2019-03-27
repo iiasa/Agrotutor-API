@@ -25,3 +25,17 @@ H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.Data.Contract\obj\Debug\
 H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.Data.Contract\obj\Debug\netstandard2.0\AgrotutorAPI.Data.Contract.csproj.CopyComplete
 H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.Data.Contract\obj\Debug\netstandard2.0\AgrotutorAPI.Data.Contract.dll
 H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.Data.Contract\obj\Debug\netstandard2.0\AgrotutorAPI.Data.Contract.pdb
+C:\AgrotutorAPI\AgrotutorAPI.Data.Contract\bin\Debug\netstandard2.0\AgrotutorAPI.Data.Contract.deps.json
+C:\AgrotutorAPI\AgrotutorAPI.Data.Contract\bin\Debug\netstandard2.0\AgrotutorAPI.Data.Contract.dll
+C:\AgrotutorAPI\AgrotutorAPI.Data.Contract\bin\Debug\netstandard2.0\AgrotutorAPI.Data.Contract.pdb
+C:\AgrotutorAPI\AgrotutorAPI.Data.Contract\bin\Debug\netstandard2.0\AgrotutorAPI.Domain.dll
+C:\AgrotutorAPI\AgrotutorAPI.Data.Contract\bin\Debug\netstandard2.0\AgrotutorAPI.Dto.dll
+C:\AgrotutorAPI\AgrotutorAPI.Data.Contract\bin\Debug\netstandard2.0\AgrotutorAPI.Domain.pdb
+C:\AgrotutorAPI\AgrotutorAPI.Data.Contract\bin\Debug\netstandard2.0\AgrotutorAPI.Dto.pdb
+C:\AgrotutorAPI\AgrotutorAPI.Data.Contract\obj\Debug\netstandard2.0\AgrotutorAPI.Data.Contract.csprojAssemblyReference.cache
+C:\AgrotutorAPI\AgrotutorAPI.Data.Contract\obj\Debug\netstandard2.0\AgrotutorAPI.Data.Contract.csproj.CoreCompileInputs.cache
+C:\AgrotutorAPI\AgrotutorAPI.Data.Contract\obj\Debug\netstandard2.0\AgrotutorAPI.Data.Contract.AssemblyInfoInputs.cache
+C:\AgrotutorAPI\AgrotutorAPI.Data.Contract\obj\Debug\netstandard2.0\AgrotutorAPI.Data.Contract.AssemblyInfo.cs
+C:\AgrotutorAPI\AgrotutorAPI.Data.Contract\obj\Debug\netstandard2.0\AgrotutorAPI.Data.Contract.csproj.CopyComplete
+C:\AgrotutorAPI\AgrotutorAPI.Data.Contract\obj\Debug\netstandard2.0\AgrotutorAPI.Data.Contract.dll
+C:\AgrotutorAPI\AgrotutorAPI.Data.Contract\obj\Debug\netstandard2.0\AgrotutorAPI.Data.Contract.pdb

@@ -4,6 +4,12 @@ namespace AgrotutorAPI.Dto
 {
     public class PlotDto
     {
+        public PlotDto()
+        {
+            MediaItems=new List<MediaItemDto>();
+            Activities=new List<ActivityDto>();
+            Delineation=new List<PositionDto>();
+        }
         public int Id { get; set; }
 
         public string Name { get; set; }

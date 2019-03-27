@@ -8,6 +8,12 @@ namespace AgrotutorAPI.Domain
 {
     public class Plot
     {
+        public Plot()
+        {
+            Activities=new List<Activity>();
+            Delineation=new List<Position>();
+            MediaItems=new List<MediaItem>();
+        }
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 

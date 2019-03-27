@@ -1,7 +1,7 @@
 services:
   agrotutorapi.web:
     build:
-      context: H:\MyDocuments\IIASA Projects\AgrotutorAPI
+      context: C:\AgrotutorAPI
       dockerfile: AgrotutorAPI.web/Dockerfile
       target: base
     entrypoint: tail -f /dev/null
@@ -20,7 +20,7 @@ services:
     ports:
     - target: 80
     volumes:
-    - H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.web:/app:rw
+    - C:\AgrotutorAPI\AgrotutorAPI.web:/app:rw
     - C:\Users\saad\vsdbg\vs2017u5:/remote_debugger:ro
     - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
     - C:\Users\saad\.nuget\packages:/root/.nuget/packages:ro

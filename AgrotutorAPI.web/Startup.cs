@@ -47,12 +47,7 @@ namespace AgrotutorAPI.web
             app.UseMvc();
             Mapper.Initialize(m =>
             {
-                m.CreateMap<Plot, PlotDto>();
-                m.CreateMap<PlotDto,Plot>();
-                m.CreateMap<Activity, ActivityDto>();
-                m.CreateMap<Position, PositionDto>();
-                m.CreateMap<MediaItem, MediaItemDto>();
-                m.CreateMap<MediaItemDto,MediaItem>();
+                m.AddProfile(new AutoMapperPlotProfile());
             });
         }
     }

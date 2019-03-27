@@ -11,3 +11,16 @@ H:\MyDocuments\IIASA Projects\AgrotutorAPI\bin\Debug\AgrotutorAPI.Data.Postgresq
 H:\MyDocuments\IIASA Projects\AgrotutorAPI\obj\Debug\docker-compose.dcprojAssemblyReference.cache
 H:\MyDocuments\IIASA Projects\AgrotutorAPI\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 H:\MyDocuments\IIASA Projects\AgrotutorAPI\obj\Debug\docker-compose.dcproj.CopyComplete
+C:\AgrotutorAPI\bin\Debug\AgrotutorAPI.web.dll
+C:\AgrotutorAPI\bin\Debug\AgrotutorAPI.Data.Contract.dll
+C:\AgrotutorAPI\bin\Debug\AgrotutorAPI.Domain.dll
+C:\AgrotutorAPI\bin\Debug\AgrotutorAPI.Dto.dll
+C:\AgrotutorAPI\bin\Debug\AgrotutorAPI.Data.Postgresql.dll
+C:\AgrotutorAPI\bin\Debug\AgrotutorAPI.web.pdb
+C:\AgrotutorAPI\bin\Debug\AgrotutorAPI.Data.Contract.pdb
+C:\AgrotutorAPI\bin\Debug\AgrotutorAPI.Domain.pdb
+C:\AgrotutorAPI\bin\Debug\AgrotutorAPI.Dto.pdb
+C:\AgrotutorAPI\bin\Debug\AgrotutorAPI.Data.Postgresql.pdb
+C:\AgrotutorAPI\obj\Debug\docker-compose.dcprojAssemblyReference.cache
+C:\AgrotutorAPI\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+C:\AgrotutorAPI\obj\Debug\docker-compose.dcproj.CopyComplete

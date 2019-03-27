@@ -317,11 +317,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\MyDocuments\\IIASA Projects\\AgrotutorAPI\\AgrotutorAPI.Data.Contract\\AgrotutorAPI.Data.Contract.csproj",
+      "projectUniqueName": "C:\\AgrotutorAPI\\AgrotutorAPI.Data.Contract\\AgrotutorAPI.Data.Contract.csproj",
       "projectName": "AgrotutorAPI.Data.Contract",
-      "projectPath": "H:\\MyDocuments\\IIASA Projects\\AgrotutorAPI\\AgrotutorAPI.Data.Contract\\AgrotutorAPI.Data.Contract.csproj",
+      "projectPath": "C:\\AgrotutorAPI\\AgrotutorAPI.Data.Contract\\AgrotutorAPI.Data.Contract.csproj",
       "packagesPath": "C:\\Users\\saad\\.nuget\\packages\\",
-      "outputPath": "H:\\MyDocuments\\IIASA Projects\\AgrotutorAPI\\AgrotutorAPI.Data.Contract\\obj\\",
+      "outputPath": "C:\\AgrotutorAPI\\AgrotutorAPI.Data.Contract\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -341,8 +341,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "H:\\MyDocuments\\IIASA Projects\\AgrotutorAPI\\AgrotutorAPI.Domain\\AgrotutorAPI.Domain.csproj": {
-              "projectPath": "H:\\MyDocuments\\IIASA Projects\\AgrotutorAPI\\AgrotutorAPI.Domain\\AgrotutorAPI.Domain.csproj"
+            "C:\\AgrotutorAPI\\AgrotutorAPI.Domain\\AgrotutorAPI.Domain.csproj": {
+              "projectPath": "C:\\AgrotutorAPI\\AgrotutorAPI.Domain\\AgrotutorAPI.Domain.csproj"
             }
           }
         }
