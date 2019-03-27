@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "f363b8ad2d71b7ae8f60ba8fe274fadcb1ffa6c0"
+    "signature": "1599785728fb2fe9cd60d7b7b755a1829fbc3b83"
   },
   "compilationOptions": {
     "defines": [
@@ -30,7 +30,8 @@
           "AutoMapper": "8.0.0",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
-          "Microsoft.NETCore.App": "2.2.0"
+          "Microsoft.NETCore.App": "2.2.0",
+          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.0.2105168"
         },
         "runtime": {
           "AgrotutorAPI.web.dll": {}
@@ -220,6 +221,7 @@
       },
       "Microsoft.NETCore.Platforms/2.2.0": {},
       "Microsoft.NETCore.Targets/2.0.0": {},
+      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.0.2105168": {},
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.2.0"
@@ -274,6 +276,7 @@
         "dependencies": {
           "AgrotutorAPI.Data.Contract": "1.0.0",
           "AgrotutorAPI.Domain": "1.0.0",
+          "Microsoft.AspNetCore.Hosting.Abstractions": "2.2.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "2.2.0"
         },
         "runtime": {
@@ -3364,6 +3367,13 @@
       "sha512": "sha512-odP/tJj1z6GylFpNo7pMtbd/xQgTC3Ex2If63dRTL38bBNMwsBnJ+RceUIyHdRBC0oik/3NehYT+oECwBhIM3Q==",
       "path": "microsoft.netcore.targets/2.0.0",
       "hashPath": "microsoft.netcore.targets.2.0.0.nupkg.sha512"
+    },
+    "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.0.2105168": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OcDidVAHC9shKB0DbF7h2E3Goduf9s5wj4BtcuQrRFnDHNoYAixowwzdmn4FKxWca6KLA5n4kYMhF6SW0L7Vrw==",
+      "path": "microsoft.visualstudio.azure.containers.tools.targets/1.0.2105168",
+      "hashPath": "microsoft.visualstudio.azure.containers.tools.targets.1.0.2105168.nupkg.sha512"
     },
     "NETStandard.Library/2.0.3": {
       "type": "package",

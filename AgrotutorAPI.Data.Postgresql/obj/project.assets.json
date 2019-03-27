@@ -2,6 +2,58 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
+      "Microsoft.AspNetCore.Hosting.Abstractions/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Hosting.Server.Abstractions": "2.2.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.Extensions.Hosting.Abstractions": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Hosting.Server.Abstractions/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "2.2.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "2.2.0",
+          "System.Text.Encodings.Web": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Http.Features/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -162,6 +214,33 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Abstractions/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Hosting.Abstractions/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
+          "Microsoft.Extensions.FileProviders.Abstractions": "2.2.0",
+          "Microsoft.Extensions.Logging.Abstractions": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Hosting.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Hosting.Abstractions.dll": {}
         }
       },
       "Microsoft.Extensions.Logging/2.2.0": {
@@ -640,6 +719,15 @@
           "ref/netstandard1.3/System.Text.Encoding.dll": {}
         }
       },
+      "System.Text.Encodings.Web/4.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
+        }
+      },
       "System.Threading/4.0.11": {
         "type": "package",
         "dependencies": {
@@ -725,6 +813,58 @@
     }
   },
   "libraries": {
+    "Microsoft.AspNetCore.Hosting.Abstractions/2.2.0": {
+      "sha512": "pVGrKK652a4lFcve2393473ojKfiSbDGpmnKyHT+RIYU+V93fSQafRitkJSh9ldNNIm9kjKZ8WuKRF8IMMi7Vg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.hosting.abstractions/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Abstractions.xml",
+        "microsoft.aspnetcore.hosting.abstractions.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.hosting.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Hosting.Server.Abstractions/2.2.0": {
+      "sha512": "BeNdIx9jGr/WGa0bqZhkBLQMfevgNr6KItXy9IhZKnGRjkbmOb5wUKGtHHiKRV2JvJlBwCl0+NL1IDLc+40PdA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.hosting.server.abstractions/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Server.Abstractions.xml",
+        "microsoft.aspnetcore.hosting.server.abstractions.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.hosting.server.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
+      "sha512": "IkuRKkTFEbO30FwfCVuL0piikRBK/kgsaLbfbeUg8Rejpe5nCRUDZ3RDLzaW0FPMZxdb1opQ/zBYibItL1AezQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.http.abstractions/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.xml",
+        "microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.http.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Features/2.2.0": {
+      "sha512": "0GNO7G290ULLrFcL7Yig7EYNpWF0ZisATpoPGszArH7wtuDDNt97o3vr4CANPzxAcJuXlhIPKuAhk+GPKm6AHg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.http.features/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.xml",
+        "microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.http.features.nuspec"
+      ]
+    },
     "Microsoft.CSharp/4.5.0": {
       "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
       "type": "package",
@@ -978,6 +1118,32 @@
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
         "microsoft.extensions.dependencyinjection.abstractions.2.2.0.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.FileProviders.Abstractions/2.2.0": {
+      "sha512": "33vTyijzAVEfbuNFts68R7bW02cJMiw21MFgMBk+XL+thcbv335PVD1+DdMSvN6e5DeAR4OmPSRsKIr86Yk4qg==",
+      "type": "package",
+      "path": "microsoft.extensions.fileproviders.abstractions/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.xml",
+        "microsoft.extensions.fileproviders.abstractions.2.2.0.nupkg.sha512",
+        "microsoft.extensions.fileproviders.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Hosting.Abstractions/2.2.0": {
+      "sha512": "tqXaCEeEeuDchJ482wwU2bHyu5UUksVrLyLsrvE9kPFYyPz7Hq17Ryq+faQP/zBCpnnqP/wqf3oSR0q60Py3HA==",
+      "type": "package",
+      "path": "microsoft.extensions.hosting.abstractions/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Hosting.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Hosting.Abstractions.xml",
+        "microsoft.extensions.hosting.abstractions.2.2.0.nupkg.sha512",
+        "microsoft.extensions.hosting.abstractions.nuspec"
       ]
     },
     "Microsoft.Extensions.Logging/2.2.0": {
@@ -2711,6 +2877,25 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
+    "System.Text.Encodings.Web/4.5.0": {
+      "sha512": "Xg4G4Indi4dqP1iuAiMSwpiWS54ZghzR644OtsRCm/m/lBMG8dUBhLVN7hLm8NNrNTR+iGbshCPTwrvxZPlm4g==",
+      "type": "package",
+      "path": "system.text.encodings.web/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard1.0/System.Text.Encodings.Web.dll",
+        "lib/netstandard1.0/System.Text.Encodings.Web.xml",
+        "lib/netstandard2.0/System.Text.Encodings.Web.dll",
+        "lib/netstandard2.0/System.Text.Encodings.Web.xml",
+        "system.text.encodings.web.4.5.0.nupkg.sha512",
+        "system.text.encodings.web.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Threading/4.0.11": {
       "sha512": "N+3xqIcg3VDKyjwwCGaZ9HawG9aC6cSDI+s7ROma310GQo8vilFZa86hqKppwTHleR/G0sfOzhvgnUxWCR/DrQ==",
       "type": "package",
@@ -2951,6 +3136,7 @@
     ".NETStandard,Version=v2.0": [
       "AgrotutorAPI.Data.Contract >= 1.0.0",
       "AgrotutorAPI.Domain >= 1.0.0",
+      "Microsoft.AspNetCore.Hosting.Abstractions >= 2.2.0",
       "Microsoft.EntityFrameworkCore.Tools >= 2.2.0",
       "NETStandard.Library >= 2.0.3",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 2.2.0"
@@ -3005,6 +3191,10 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Hosting.Abstractions": {
+            "target": "Package",
+            "version": "[2.2.0, )"
+          },
           "Microsoft.EntityFrameworkCore.Tools": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers",
             "suppressParent": "All",

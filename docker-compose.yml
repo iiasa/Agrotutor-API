@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  agrotutorapi.web:
+    image: ${DOCKER_REGISTRY-}agrotutorapiweb
+    build:
+      context: .
+      dockerfile: AgrotutorAPI.web/Dockerfile
