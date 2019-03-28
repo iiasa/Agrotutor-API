@@ -26,7 +26,6 @@ namespace AgrotutorAPI.web.Controllers
         [Route("")]
         public IActionResult Plots()
         {
-            var res = JsonConvert.SerializeObject(new PlotDto());
             var plotsList = _plotRepository.GetPlots();
             var result = Mapper.Map<IEnumerable<PlotDto>>(plotsList);
             return Ok(result);
@@ -43,7 +42,7 @@ namespace AgrotutorAPI.web.Controllers
             return Ok(result);
         }
 
-        // POST api/Plots
+        // POST api/Plots/CreatePlot
         [HttpPost]
         [Route("CreatePlot")]
         public ActionResult CreatePlot([FromBody] PlotDto plotDto)
