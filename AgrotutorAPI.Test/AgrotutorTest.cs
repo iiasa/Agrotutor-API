@@ -13,6 +13,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
+using Newtonsoft.Json;
 
 namespace AgrotutorAPI.Test
 {
@@ -59,7 +60,7 @@ namespace AgrotutorAPI.Test
                 {
                     new ActivityDto
                     {
-                        Id = 3,
+                      
                         Name = "ActivityTest1",
                         ActivityType = ActivityTypeDto.Commercialization,
                         AmountApplied = "AmountAppliedTest1",
@@ -80,15 +81,18 @@ namespace AgrotutorAPI.Test
                         PlotArea = 1
                     }
                 },
-                Delineation = new List<PositionDto>
+                Delineation = new List<DelineationDto>
                 {
+                    new DelineationDto{Position = 
                     new PositionDto
                     {
                         Accuracy = 1,
                         Latitude = 48.072875,
                         Longitude = 16.361187,
                         Timestamp = DateTimeOffset.Now
-                    },
+                    }
+                        },
+                    new DelineationDto{Position =
                     new PositionDto
                     {
                         Accuracy = 1,
@@ -96,13 +100,14 @@ namespace AgrotutorAPI.Test
                         Longitude = 16.362887,
                         Timestamp = DateTimeOffset.Now
                     }
+                    }
                 }
             };
 
             _newPlotWithImages = new PlotDto
             {
                 DeviceID = "deviceIDTest",
-
+                
                 CropType = CropTypeDto.Alfalfa,
                 ClimateType = ClimateTypeDto.Cold,
                 Irrigated = false,
@@ -113,7 +118,7 @@ namespace AgrotutorAPI.Test
                 {
                     new ActivityDto
                     {
-                        Id = 3,
+                      
                         Name = "ActivityTest1",
                         ActivityType = ActivityTypeDto.Commercialization,
                         AmountApplied = "AmountAppliedTest1",
@@ -135,23 +140,28 @@ namespace AgrotutorAPI.Test
                     }
                 },
                 MediaItems = _mediaItemList,
-                Delineation = new List<PositionDto>
+                Delineation = new List<DelineationDto>
                 {
-                    new PositionDto
-                    {
-                        Accuracy = 1,
-                        Latitude = 48.072888,
-                        Longitude = 16.361117,
-                        Timestamp = DateTimeOffset.Now
+                    new DelineationDto{Position =
+                        new PositionDto
+                        {
+                            Accuracy = 1,
+                            Latitude = 48.072875,
+                            Longitude = 16.361187,
+                            Timestamp = DateTimeOffset.Now
+                        }
                     },
-                    new PositionDto
-                    {
-                        Accuracy = 1,
-                        Latitude = 48.079227,
-                        Longitude = 16.362887,
-                        Timestamp = DateTimeOffset.Now
+                    new DelineationDto{Position =
+                        new PositionDto
+                        {
+                            Accuracy = 1,
+                            Latitude = 48.079812,
+                            Longitude = 16.362887,
+                            Timestamp = DateTimeOffset.Now
+                        }
                     }
-                }
+                },
+              
             };
 
             _position = new PositionDto
@@ -205,6 +215,7 @@ namespace AgrotutorAPI.Test
         [TestMethod]
         public void CanRetrieveListPlots()
         {
+          var res= JsonConvert.SerializeObject(_newPlotWithImages);
             var dbInMemoryOption = new DbContextOptionsBuilder<AgrotutorContext>()
                 .UseInMemoryDatabase("RetrieveList").Options;
             using (var context = new AgrotutorContext(dbInMemoryOption))

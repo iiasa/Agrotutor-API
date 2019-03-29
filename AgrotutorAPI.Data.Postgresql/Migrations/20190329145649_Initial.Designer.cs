@@ -10,8 +10,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace AgrotutorAPI.Data.Postgresql.Migrations
 {
     [DbContext(typeof(AgrotutorContext))]
-    [Migration("20190325120349_Add Identiy attribute to MediaItem.ID property")]
-    partial class AddIdentiyattributetoMediaItemIDproperty
+    [Migration("20190329145649_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -72,6 +72,20 @@ namespace AgrotutorAPI.Data.Postgresql.Migrations
                     b.ToTable("Activities");
                 });
 
+            modelBuilder.Entity("AgrotutorAPI.Domain.Delineation", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int?>("PlotId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PlotId");
+
+                    b.ToTable("Delineations");
+                });
+
             modelBuilder.Entity("AgrotutorAPI.Domain.MediaItem", b =>
                 {
                     b.Property<Guid>("Id")
@@ -106,41 +120,9 @@ namespace AgrotutorAPI.Data.Postgresql.Migrations
                     b.Property<string>("Name")
                         .IsRequired();
 
-                    b.Property<int>("PositionId");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("PositionId");
 
                     b.ToTable("Plots");
-                });
-
-            modelBuilder.Entity("AgrotutorAPI.Domain.Position", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<double?>("Accuracy");
-
-                    b.Property<double?>("Altitude");
-
-                    b.Property<double?>("Course");
-
-                    b.Property<double>("Latitude");
-
-                    b.Property<double>("Longitude");
-
-                    b.Property<int?>("PlotId");
-
-                    b.Property<double?>("Speed");
-
-                    b.Property<DateTimeOffset>("Timestamp");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("PlotId");
-
-                    b.ToTable("Position");
                 });
 
             modelBuilder.Entity("AgrotutorAPI.Domain.Activity", b =>
@@ -149,6 +131,41 @@ namespace AgrotutorAPI.Data.Postgresql.Migrations
                         .WithMany("Activities")
                         .HasForeignKey("PlotId")
                         .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("AgrotutorAPI.Domain.Delineation", b =>
+                {
+                    b.HasOne("AgrotutorAPI.Domain.Plot")
+                        .WithMany("Delineation")
+                        .HasForeignKey("PlotId");
+
+                    b.OwnsOne("AgrotutorAPI.Domain.Position", "Position", b1 =>
+                        {
+                            b1.Property<int>("DelineationId");
+
+                            b1.Property<double?>("Accuracy");
+
+                            b1.Property<double?>("Altitude");
+
+                            b1.Property<double?>("Course");
+
+                            b1.Property<double>("Latitude");
+
+                            b1.Property<double>("Longitude");
+
+                            b1.Property<double?>("Speed");
+
+                            b1.Property<DateTimeOffset>("Timestamp");
+
+                            b1.HasKey("DelineationId");
+
+                            b1.ToTable("Delineations");
+
+                            b1.HasOne("AgrotutorAPI.Domain.Delineation")
+                                .WithOne("Position")
+                                .HasForeignKey("AgrotutorAPI.Domain.Position", "DelineationId")
+                                .OnDelete(DeleteBehavior.Cascade);
+                        });
                 });
 
             modelBuilder.Entity("AgrotutorAPI.Domain.MediaItem", b =>
@@ -160,17 +177,33 @@ namespace AgrotutorAPI.Data.Postgresql.Migrations
 
             modelBuilder.Entity("AgrotutorAPI.Domain.Plot", b =>
                 {
-                    b.HasOne("AgrotutorAPI.Domain.Position", "Position")
-                        .WithMany()
-                        .HasForeignKey("PositionId")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
+                    b.OwnsOne("AgrotutorAPI.Domain.Position", "Position", b1 =>
+                        {
+                            b1.Property<int>("PlotId");
 
-            modelBuilder.Entity("AgrotutorAPI.Domain.Position", b =>
-                {
-                    b.HasOne("AgrotutorAPI.Domain.Plot")
-                        .WithMany("Delineation")
-                        .HasForeignKey("PlotId");
+                            b1.Property<double?>("Accuracy");
+
+                            b1.Property<double?>("Altitude");
+
+                            b1.Property<double?>("Course");
+
+                            b1.Property<double>("Latitude");
+
+                            b1.Property<double>("Longitude");
+
+                            b1.Property<double?>("Speed");
+
+                            b1.Property<DateTimeOffset>("Timestamp");
+
+                            b1.HasKey("PlotId");
+
+                            b1.ToTable("Plots");
+
+                            b1.HasOne("AgrotutorAPI.Domain.Plot")
+                                .WithOne("Position")
+                                .HasForeignKey("AgrotutorAPI.Domain.Position", "PlotId")
+                                .OnDelete(DeleteBehavior.Cascade);
+                        });
                 });
 #pragma warning restore 612, 618
         }

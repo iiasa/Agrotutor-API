@@ -5,8 +5,6 @@ namespace AgrotutorAPI.Domain
 {
     public class Position 
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
         public DateTimeOffset Timestamp { get; set; }
         public double Latitude { get; set; }
         public double Longitude { get; set; }
