@@ -3,16 +3,13 @@ services:
     build:
       context: C:\AgrotutorAPI
       dockerfile: AgrotutorAPI.web/Dockerfile
-      target: base
     entrypoint: tail -f /dev/null
     environment:
       ASPNETCORE_ENVIRONMENT: Development
-      DOTNET_USE_POLLING_FILE_WATCHER: '1'
-      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
-    image: agrotutorapiweb:dev
+    image: agrotutorapiweb
     labels:
       com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
-        --additionalProbingPath /root/.nuget/fallbackpackages  bin/Debug/netcoreapp2.2/AgrotutorAPI.web.dll'
+        --additionalProbingPath /root/.nuget/fallbackpackages  AgrotutorAPI.web.dll'
       com.microsoft.visualstudio.debuggee.killprogram: /bin/bash -c "if PID=$$(pidof
         -x dotnet); then kill $$PID; fi"
       com.microsoft.visualstudio.debuggee.program: dotnet
@@ -20,8 +17,5 @@ services:
     ports:
     - target: 80
     volumes:
-    - C:\AgrotutorAPI\AgrotutorAPI.web:/app:rw
     - C:\Users\saad\vsdbg\vs2017u5:/remote_debugger:ro
-    - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
-    - C:\Users\saad\.nuget\packages:/root/.nuget/packages:ro
 version: '3.4'

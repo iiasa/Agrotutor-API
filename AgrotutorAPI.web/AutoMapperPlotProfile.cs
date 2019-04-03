@@ -12,12 +12,12 @@ namespace AgrotutorAPI.web
     {
         public AutoMapperPlotProfile()
         {
-            CreateMap<Plot, PlotDto>();
-            CreateMap<PlotDto, Plot>();
-            CreateMap<Activity, ActivityDto>();
-            CreateMap<Position, PositionDto>();
-            CreateMap<MediaItem, MediaItemDto>();
-            CreateMap<MediaItemDto, MediaItem>();
+            CreateMap<Plot, PlotDto>().ReverseMap().ForMember(des => des.Id, src => src.Ignore());
+            CreateMap<DelineationPosition, DelineationPositionDto>().ReverseMap().ForMember(des => des.Id, src => src.Ignore());
+            //CreateMap<PlotDto, Plot>().ForMember(des => des.Id, src => src.Ignore()); 
+            CreateMap<Activity, ActivityDto>().ReverseMap().ForMember(des => des.Id, src => src.Ignore()); 
+            CreateMap<MediaItem, MediaItemDto>().ReverseMap().ForMember(des => des.Id, src => src.Ignore()); 
+            CreateMap<MediaItemDto, MediaItem>().ReverseMap().ForMember(des => des.Id, src => src.Ignore()); 
         }
     }
 }

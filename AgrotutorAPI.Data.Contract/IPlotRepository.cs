@@ -8,10 +8,10 @@ namespace AgrotutorAPI.Data.Contract
 {
     public interface IPlotRepository
     {
-        IEnumerable<Plot> GetPlots();
-        Plot GetPlotById(int plotId);
-         void AddPlot(Plot plot);
-        bool Save();
+        Task<IEnumerable<Plot>> GetPlotsAsync();
+        Task<Plot> GetPlotByIdAsync(int plotId);
+        Task AddPlotAsync(Plot plot);
+        Task<bool> SaveAsync();
     }
 
 }

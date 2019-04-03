@@ -11,7 +11,7 @@ namespace AgrotutorAPI.Domain
         public Plot()
         {
             Activities=new List<Activity>();
-            Delineation=new List<Delineation>();
+            Delineation=new List<DelineationPosition>();
             MediaItems=new List<MediaItem>();
         }
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -27,7 +27,7 @@ namespace AgrotutorAPI.Domain
 
         public ClimateTypeDto ClimateType { get; set; } 
         
-        public List<Delineation> Delineation { get; set; }
+        public List<DelineationPosition> Delineation { get; set; }
 
         public MaturityTypeDto MaturityType { get; set; } 
 

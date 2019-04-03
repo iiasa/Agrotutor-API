@@ -18,25 +18,25 @@ namespace AgrotutorAPI.Data.Postgresql.Repositories
         }
 
 
-        public void AddPlot(Plot plot)
+        public async Task AddPlotAsync(Plot plot)
         {
-            _agrotutorContext.Plots.Add(plot);
+          await  _agrotutorContext.Plots.AddAsync(plot);
 
         }
 
-        public bool Save()
+        public async Task<bool> SaveAsync()
         {
-            return _agrotutorContext.SaveChanges() >= 0;
+            return await _agrotutorContext.SaveChangesAsync() >= 0;
         }
 
-        public IEnumerable<Plot> GetPlots()
+        public async Task<IEnumerable<Plot>> GetPlotsAsync()
         {
-            return _agrotutorContext.Plots.Include(p=>p.Activities).OrderBy(p => p.Name);
+            return await _agrotutorContext.Plots.Include(p=>p.Activities).OrderBy(p => p.Name).ToListAsync();
         }
 
-        public Plot GetPlotById(int plotId)
+        public async Task<Plot> GetPlotByIdAsync(int plotId)
         {
-            return _agrotutorContext.Plots.Include(p => p.Activities).FirstOrDefault(p => p.Id == plotId);
+            return await _agrotutorContext.Plots.Include(p => p.Activities).FirstOrDefaultAsync(p => p.Id == plotId);
         }
 
      

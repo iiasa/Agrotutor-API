@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using AgrotutorAPI.Data.Contract;
 using AgrotutorAPI.Domain;
 using AgrotutorAPI.Dto;
@@ -24,18 +25,18 @@ namespace AgrotutorAPI.web.Controllers
         // GET api/Plots
         [HttpGet]
         [Route("")]
-        public IActionResult Plots()
+        public async Task<IActionResult> Plots()
         {
-            var plotsList = _plotRepository.GetPlots();
+            var plotsList =await _plotRepository.GetPlotsAsync();
             var result = Mapper.Map<IEnumerable<PlotDto>>(plotsList);
             return Ok(result);
         }
 
         // GET api/Plots/5
         [HttpGet("{id}")]
-        public ActionResult<PlotDto> GetPlotsById(int plotId)
+        public async Task<IActionResult> GetPlotsById(int plotId)
         {
-            var plotRes = _plotRepository.GetPlotById(plotId);
+            var plotRes = await _plotRepository.GetPlotByIdAsync(plotId);
             if (plotRes == null) return NotFound();
        
             var result = Mapper.Map<PlotDto>(plotRes);
@@ -45,31 +46,33 @@ namespace AgrotutorAPI.web.Controllers
         // POST api/Plots/CreatePlot
         [HttpPost]
         [Route("CreatePlot")]
-        public ActionResult CreatePlot([FromBody] PlotDto plotDto)
+        public async Task<IActionResult> CreatePlot([FromBody] PlotDto plotDto)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
             var finalPlot = Mapper.Map<Plot>(plotDto);
+            bool uploadImagesresult = true;
             if (finalPlot.MediaItems.Count > 0)
             {
-                var result = _pictureRepository.UploadImages(finalPlot.MediaItems);
-                if (result)
-                {
-
-
-                    _plotRepository.AddPlot(finalPlot);
-                    if (!_plotRepository.Save())
-                        return StatusCode(500, "A problem happend while handling your request");
-
-                    var createdPlot = Mapper.Map<PlotDto>(finalPlot);
-                    return CreatedAtRoute("GetPlotsById", new {plotId = createdPlot.Id}, createdPlot);
-                }
-
-                return StatusCode(500, "A problem happend while handling your request");
+                 uploadImagesresult = _pictureRepository.UploadImages(finalPlot.MediaItems);
             }
-            return StatusCode(500, "No pictures are included");
+
+            if (uploadImagesresult)
+            {
+
+
+                await _plotRepository.AddPlotAsync(finalPlot);
+                if (! await _plotRepository.SaveAsync())
+                    return StatusCode(500, "A problem happend while handling your request");
+
+                var createdPlot = Mapper.Map<PlotDto>(finalPlot);
+                return Ok(createdPlot);
+            }
+
+            return StatusCode(500, "A problem happend while handling your request");
+
         }
 
         // PUT api/Plots/5

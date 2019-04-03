@@ -18,7 +18,6 @@ H:\MyDocuments\IIASA Projects\AgrotutorAPI\AgrotutorAPI.Dto\obj\Debug\netstandar
 C:\AgrotutorAPI\AgrotutorAPI.Dto\bin\Debug\netstandard2.0\AgrotutorAPI.Dto.deps.json
 C:\AgrotutorAPI\AgrotutorAPI.Dto\bin\Debug\netstandard2.0\AgrotutorAPI.Dto.dll
 C:\AgrotutorAPI\AgrotutorAPI.Dto\bin\Debug\netstandard2.0\AgrotutorAPI.Dto.pdb
-C:\AgrotutorAPI\AgrotutorAPI.Dto\obj\Debug\netstandard2.0\AgrotutorAPI.Dto.csprojAssemblyReference.cache
 C:\AgrotutorAPI\AgrotutorAPI.Dto\obj\Debug\netstandard2.0\AgrotutorAPI.Dto.csproj.CoreCompileInputs.cache
 C:\AgrotutorAPI\AgrotutorAPI.Dto\obj\Debug\netstandard2.0\AgrotutorAPI.Dto.AssemblyInfoInputs.cache
 C:\AgrotutorAPI\AgrotutorAPI.Dto\obj\Debug\netstandard2.0\AgrotutorAPI.Dto.AssemblyInfo.cs

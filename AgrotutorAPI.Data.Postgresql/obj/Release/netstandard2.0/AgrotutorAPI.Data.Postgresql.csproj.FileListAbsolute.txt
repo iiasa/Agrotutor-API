@@ -1,0 +1,16 @@
+C:\AgrotutorAPI\AgrotutorAPI.Data.Postgresql\bin\Release\netstandard2.0\AgrotutorAPI.Data.Postgresql.deps.json
+C:\AgrotutorAPI\AgrotutorAPI.Data.Postgresql\bin\Release\netstandard2.0\AgrotutorAPI.Data.Postgresql.dll
+C:\AgrotutorAPI\AgrotutorAPI.Data.Postgresql\bin\Release\netstandard2.0\AgrotutorAPI.Data.Postgresql.pdb
+C:\AgrotutorAPI\AgrotutorAPI.Data.Postgresql\bin\Release\netstandard2.0\AgrotutorAPI.Data.Contract.dll
+C:\AgrotutorAPI\AgrotutorAPI.Data.Postgresql\bin\Release\netstandard2.0\AgrotutorAPI.Domain.dll
+C:\AgrotutorAPI\AgrotutorAPI.Data.Postgresql\bin\Release\netstandard2.0\AgrotutorAPI.Dto.dll
+C:\AgrotutorAPI\AgrotutorAPI.Data.Postgresql\bin\Release\netstandard2.0\AgrotutorAPI.Data.Contract.pdb
+C:\AgrotutorAPI\AgrotutorAPI.Data.Postgresql\bin\Release\netstandard2.0\AgrotutorAPI.Domain.pdb
+C:\AgrotutorAPI\AgrotutorAPI.Data.Postgresql\bin\Release\netstandard2.0\AgrotutorAPI.Dto.pdb
+C:\AgrotutorAPI\AgrotutorAPI.Data.Postgresql\obj\Release\netstandard2.0\AgrotutorAPI.Data.Postgresql.csprojAssemblyReference.cache
+C:\AgrotutorAPI\AgrotutorAPI.Data.Postgresql\obj\Release\netstandard2.0\AgrotutorAPI.Data.Postgresql.csproj.CoreCompileInputs.cache
+C:\AgrotutorAPI\AgrotutorAPI.Data.Postgresql\obj\Release\netstandard2.0\AgrotutorAPI.Data.Postgresql.AssemblyInfoInputs.cache
+C:\AgrotutorAPI\AgrotutorAPI.Data.Postgresql\obj\Release\netstandard2.0\AgrotutorAPI.Data.Postgresql.AssemblyInfo.cs
+C:\AgrotutorAPI\AgrotutorAPI.Data.Postgresql\obj\Release\netstandard2.0\AgrotutorAPI.Data.Postgresql.csproj.CopyComplete
+C:\AgrotutorAPI\AgrotutorAPI.Data.Postgresql\obj\Release\netstandard2.0\AgrotutorAPI.Data.Postgresql.dll
+C:\AgrotutorAPI\AgrotutorAPI.Data.Postgresql\obj\Release\netstandard2.0\AgrotutorAPI.Data.Postgresql.pdb

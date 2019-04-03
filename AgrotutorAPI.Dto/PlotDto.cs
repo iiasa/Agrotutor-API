@@ -8,7 +8,7 @@ namespace AgrotutorAPI.Dto
         {
             MediaItems=new List<MediaItemDto>();
             Activities=new List<ActivityDto>();
-            Delineation=new List<DelineationDto>();
+            Delineation=new List<DelineationPositionDto>();
         }
         public int Id { get; set; }
 
@@ -17,7 +17,7 @@ namespace AgrotutorAPI.Dto
         public PositionDto Position { get; set; }
         public List<ActivityDto> Activities { get; set; }
         public ClimateTypeDto ClimateType { get; set; } 
-        public List<DelineationDto> Delineation { get; set; }
+        public List<DelineationPositionDto> Delineation { get; set; }
 
         public MaturityTypeDto MaturityType { get; set; } 
 

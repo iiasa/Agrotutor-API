@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 using AgrotutorAPI.Data.Postgresql;
 using AgrotutorAPI.Data.Postgresql.Repositories;
 using AgrotutorAPI.Dto;
@@ -20,21 +21,21 @@ namespace AgrotutorAPI.Test
     [TestClass]
     public class AgrotutorTest
     {
-        private List<PositionDto> _listPositions_test1;
-
-        private List<PositionDto> _listPositions_test2;
-
-        //  DbContextOptions<AgrotutorContext> _dbInMemoryOption;
         private List<MediaItemDto> _mediaItemList;
         private PlotDto _newPlot;
         private PlotDto _newPlotWithImages;
         private PictureRepository _pictureRepository;
         private PositionDto _position;
 
+        [ClassInitialize]
+        public static void ClassInitializer(TestContext context)
+        {
+            Mapper.Initialize(m => { m.AddProfile(new AutoMapperPlotProfile()); });
+        }
         [TestInitialize]
         public void Initialization()
         {
-            Mapper.Initialize(m => { m.AddProfile(new AutoMapperPlotProfile()); });
+
             _mediaItemList = new List<MediaItemDto>
             {
                 new MediaItemDto
@@ -81,9 +82,9 @@ namespace AgrotutorAPI.Test
                         PlotArea = 1
                     }
                 },
-                Delineation = new List<DelineationDto>
+                Delineation = new List<DelineationPositionDto>
                 {
-                    new DelineationDto{Position = 
+                    new DelineationPositionDto{Position = 
                     new PositionDto
                     {
                         Accuracy = 1,
@@ -92,7 +93,7 @@ namespace AgrotutorAPI.Test
                         Timestamp = DateTimeOffset.Now
                     }
                         },
-                    new DelineationDto{Position =
+                    new DelineationPositionDto{Position =
                     new PositionDto
                     {
                         Accuracy = 1,
@@ -140,9 +141,9 @@ namespace AgrotutorAPI.Test
                     }
                 },
                 MediaItems = _mediaItemList,
-                Delineation = new List<DelineationDto>
+                Delineation = new List<DelineationPositionDto>
                 {
-                    new DelineationDto{Position =
+                    new DelineationPositionDto{Position =
                         new PositionDto
                         {
                             Accuracy = 1,
@@ -151,7 +152,7 @@ namespace AgrotutorAPI.Test
                             Timestamp = DateTimeOffset.Now
                         }
                     },
-                    new DelineationDto{Position =
+                    new DelineationPositionDto{Position =
                         new PositionDto
                         {
                             Accuracy = 1,
@@ -166,40 +167,7 @@ namespace AgrotutorAPI.Test
 
             _position = new PositionDto
                 {Accuracy = 1, Latitude = 48.072294, Longitude = 16.361882, Timestamp = DateTimeOffset.Now};
-            _listPositions_test1 = new List<PositionDto>
-            {
-                new PositionDto
-                {
-                    Accuracy = .5,
-                    Latitude = 48.072875,
-                    Longitude = 16.361187,
-                    Timestamp = DateTimeOffset.Now
-                },
-                new PositionDto
-                {
-                    Accuracy = 1.5,
-                    Latitude = 48.079812,
-                    Longitude = 16.362887,
-                    Timestamp = DateTimeOffset.Now
-                }
-            };
-            _listPositions_test2 = new List<PositionDto>
-            {
-                new PositionDto
-                {
-                    Accuracy = .5,
-                    Latitude = 48.072875,
-                    Longitude = 16.361187,
-                    Timestamp = DateTimeOffset.Now
-                },
-                new PositionDto
-                {
-                    Accuracy = 1.5,
-                    Latitude = 48.079812,
-                    Longitude = 16.362887,
-                    Timestamp = DateTimeOffset.Now
-                }
-            };
+            IntializaPictureRepository();
             //SeedData();
         }
 
@@ -213,9 +181,9 @@ namespace AgrotutorAPI.Test
         }
 
         [TestMethod]
-        public void CanRetrieveListPlots()
+        public async Task CanRetrieveListPlots()
         {
-          var res= JsonConvert.SerializeObject(_newPlotWithImages);
+         
             var dbInMemoryOption = new DbContextOptionsBuilder<AgrotutorContext>()
                 .UseInMemoryDatabase("RetrieveList").Options;
             using (var context = new AgrotutorContext(dbInMemoryOption))
@@ -223,10 +191,9 @@ namespace AgrotutorAPI.Test
                 if (!context.Plots.Any())
                 {
                     var rep = new PlotRepository(context);
-                    IntializaPictureRepository();
                     var plotController = new PlotsController(rep, _pictureRepository);
-                    plotController.CreatePlot(_newPlotWithImages);
-                    var resultOk = plotController.Plots() as OkObjectResult;
+                   await plotController.CreatePlot(_newPlotWithImages);
+                    var resultOk = await plotController.Plots() as OkObjectResult;
                     Assert.IsNotNull(resultOk);
                     var result = resultOk.Value as List<PlotDto>;
                     Assert.IsNotNull(result);
@@ -235,26 +202,32 @@ namespace AgrotutorAPI.Test
             }
         }
 
-
         [TestMethod]
-        public void CreatPlotWithoutImages()
+        public async Task Can_Retrieve_By_ID()
         {
+ 
             var dbInMemoryOption = new DbContextOptionsBuilder<AgrotutorContext>()
-                .UseInMemoryDatabase("CreatPlotWithoutImages").Options;
+                .UseInMemoryDatabase("RetrieveList").Options;
             using (var context = new AgrotutorContext(dbInMemoryOption))
             {
-                var rep = new PlotRepository(context);
-                var plotController = new PlotsController(rep, null);
-                var res = plotController.CreatePlot(_newPlot) as ObjectResult;
-                Assert.IsNotNull(res);
-                Assert.IsTrue(res.StatusCode == 500);
+                if (!context.Plots.Any())
+                {
+                    var rep = new PlotRepository(context);
+                    var plotController = new PlotsController(rep, _pictureRepository);
+                   await plotController.CreatePlot(_newPlotWithImages);
+                    var resultOk =await plotController.GetPlotsById(1) as OkObjectResult;
+                    Assert.IsNotNull(resultOk);
+                    var result = resultOk.Value as PlotDto;
+                    Assert.IsNotNull(result);
+                    Assert.IsTrue(result.Id == 1);
+                }
             }
         }
 
         [TestMethod]
-        public void CreatPlotWithImages()
+        public async Task CreatPlot_Return_OkObjectResult()
         {
-            IntializaPictureRepository();
+  
             var dbInMemoryOption = new DbContextOptionsBuilder<AgrotutorContext>()
                 .UseInMemoryDatabase("CreatPlotWithImages").Options;
             using (var context = new AgrotutorContext(dbInMemoryOption))
@@ -264,12 +237,30 @@ namespace AgrotutorAPI.Test
 
                 var plotController = new PlotsController(rep, _pictureRepository);
 
-                var res = plotController.CreatePlot(_newPlotWithImages) as CreatedAtRouteResult;
+                var res =await plotController.CreatePlot(_newPlotWithImages) as OkObjectResult;
                 Assert.IsNotNull(res);
-                Assert.IsInstanceOfType(res, typeof(CreatedAtRouteResult));
+                Assert.IsInstanceOfType(res, typeof(OkObjectResult));
+                Assert.IsTrue(res.StatusCode==200);
 
-                Assert.IsTrue(((PlotDto) res.Value).MediaItems.Count == 1);
-                Assert.IsTrue(((PlotDto) res.Value).Id > 0);
+            }
+        }
+        [TestMethod]
+        public async Task CreatPlot_ReturnNewObjectId()
+        {
+      
+            var dbInMemoryOption = new DbContextOptionsBuilder<AgrotutorContext>()
+                .UseInMemoryDatabase("CreatPlotWithImages").Options;
+            using (var context = new AgrotutorContext(dbInMemoryOption))
+            {
+                var rep = new PlotRepository(context);
+                IntializaPictureRepository();
+
+                var plotController = new PlotsController(rep, _pictureRepository);
+
+                var res = await plotController.CreatePlot(_newPlotWithImages) as OkObjectResult;
+                Assert.IsNotNull(res);
+                Assert.IsInstanceOfType(res.Value, typeof(PlotDto));
+                Assert.IsTrue(((PlotDto)res.Value).Id > 0);
             }
         }
     }
