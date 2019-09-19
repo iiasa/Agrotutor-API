@@ -52,6 +52,8 @@ docker-compose build
 docker-compose up -d
 ```
 
+This solution is mostly used for development builds. For deploying a productive service please use the [published image](https://hub.docker.com/r/iiasaeocs/agrotutor).
+
 At IIASA we're using [docker-swarm](https://docs.docker.com/engine/swarm/) which can be easily also locally activated by running the command `docker swarm init`. This makes docker run an application called [portainer](https://www.portainer.io/) which can be accessed through port 9000. This lets you manage volumes and stacks through a Web-GUI.
 
 However the application will be deployed, [docker-compose.template.yml](docker-compose.template.yml) can be used as a reference for configuring the application. This file can be used directly within the portainer web-gui, or with the commands listed above necessary to run the application locally. If you plan to use an existing / different database service, please just exclude the agrotutor-postgres service from the docker-compose file.
