@@ -1,0 +1,29 @@
+version: "3.4"
+
+services:
+  agrotutor-api:
+    image: iiasaeocs/agrotutor:12091901
+    restart: always
+    environment:
+      - ConnectionStrings:AgrotutorApiDatabase=Host=localhost:5432;User Id=agrotutor;Password=123123;Database=agrotutor;
+    networks:
+      - swarm-network
+    ports:
+      - "8000:80"
+      
+  agrotutor-postgres:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: agrotutor
+      POSTGRES_PASSWORD: 123123
+      POSTGRES_DB: agrotutor
+    networks:
+      - swarm-network
+    ports:
+      - "5432:5432"
+    
+networks:
+  swarm-network:
+    driver: overlay
+    external: true
