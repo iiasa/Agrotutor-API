@@ -5,7 +5,7 @@ services:
     image: iiasaeocs/agrotutor:12091901
     restart: always
     environment:
-      - ConnectionStrings:AgrotutorApiDatabase=Host=localhost:5432;User Id=agrotutor;Password=123123;Database=agrotutor;
+      - ConnectionStrings:AgrotutorApiDatabase=Host=localhost;Port=5432;User Id=agrotutor;Password=123123;Database=agrotutor;
     networks:
       - swarm-network
     ports:
