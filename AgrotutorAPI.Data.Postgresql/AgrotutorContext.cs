@@ -1,6 +1,4 @@
-﻿using System;
-using AgrotutorAPI.Domain;
-using JetBrains.Annotations;
+﻿using AgrotutorAPI.Domain;
 using Microsoft.EntityFrameworkCore;
 
 namespace AgrotutorAPI.Data.Postgresql

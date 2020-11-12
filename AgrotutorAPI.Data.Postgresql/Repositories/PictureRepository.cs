@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Net.Mime;
-using System.Threading.Tasks;
 using AgrotutorAPI.Data.Contract;
 using AgrotutorAPI.Domain;
 using Microsoft.AspNetCore.Hosting;

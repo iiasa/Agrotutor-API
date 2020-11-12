@@ -5,7 +5,6 @@ using AgrotutorAPI.Domain;
 using AgrotutorAPI.Dto;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
 
 namespace AgrotutorAPI.web.Controllers
 {

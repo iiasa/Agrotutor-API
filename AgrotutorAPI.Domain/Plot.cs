@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using AgrotutorAPI.Domain;
 using AgrotutorAPI.Dto;
 
 namespace AgrotutorAPI.Domain
