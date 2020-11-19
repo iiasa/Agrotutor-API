@@ -66,8 +66,7 @@ namespace AgrotutorAPI.web.Controllers
                 if (! await _plotRepository.SaveAsync())
                     return StatusCode(500, "A problem happend while handling your request");
 
-                var createdPlot = Mapper.Map<PlotDto>(finalPlot);
-                return Ok(createdPlot);
+                return Ok();
             }
 
             return StatusCode(500, "A problem happend while handling your request");
