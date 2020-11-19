@@ -48,6 +48,8 @@ namespace AgrotutorAPI.Data.Postgresql.Repositories
             var plot =  await _agrotutorContext.Plots
                 .Include(p => p.Activities)
                 .Include(p => p.Position)
+                .Include(p => p.Delineation)
+                .Include(p => p.MediaItems)
                 .Where(p => p.MobileId == mobileId && Math.Abs(p.Position.Latitude - position.Latitude) < 0.00001 &&
                             Math.Abs(p.Position.Longitude - position.Longitude) < 0.00001).FirstOrDefaultAsync();
 
