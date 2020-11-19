@@ -29,12 +29,11 @@ namespace AgrotutorAPI.web
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo()
+                c.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
                     Title = "API",
                     Description = "API"
-
                 });
             });
 

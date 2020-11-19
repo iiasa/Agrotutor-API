@@ -3,15 +3,17 @@ using System;
 using AgrotutorAPI.Data.Postgresql;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace AgrotutorAPI.Data.Postgresql.Migrations
 {
     [DbContext(typeof(AgrotutorContext))]
-    partial class AgrotutorContextModelSnapshot : ModelSnapshot
+    [Migration("20201119071928_AddedMobileId")]
+    partial class AddedMobileId
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -51,6 +53,7 @@ namespace AgrotutorAPI.Data.Postgresql.Migrations
                         .HasColumnType("double precision");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<double>("NumberOfSeeds")

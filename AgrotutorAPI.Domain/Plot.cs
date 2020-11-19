@@ -16,6 +16,8 @@ namespace AgrotutorAPI.Domain
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
+        public int MobileId { get; set; }
+
         [Required]
         public string Name { get; set; }
         [Required]

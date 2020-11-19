@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2010
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AgrotutorAPI.web", "AgrotutorAPI.web\AgrotutorAPI.web.csproj", "{7B7F444A-2304-4982-841F-699A4E020C76}"
 EndProject
@@ -16,6 +16,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AgrotutorAPI.Dto", "AgrotutorAPI.Dto\AgrotutorAPI.Dto.csproj", "{225CC4FF-98E7-44B5-8B5B-B516237291AA}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{27FA6B77-4C82-4B68-9DDC-9214D478353F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{117A50BA-B971-44DC-9F30-26D30D182265}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

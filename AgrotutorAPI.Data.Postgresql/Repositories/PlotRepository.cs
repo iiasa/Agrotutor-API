@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AgrotutorAPI.Data.Contract;
@@ -22,6 +23,11 @@ namespace AgrotutorAPI.Data.Postgresql.Repositories
 
         }
 
+        public void UpdatePlot(Plot plot)
+        {
+            _agrotutorContext.Update(plot);
+        }
+
         public async Task<bool> SaveAsync()
         {
             return await _agrotutorContext.SaveChangesAsync() >= 0;
@@ -37,6 +43,15 @@ namespace AgrotutorAPI.Data.Postgresql.Repositories
             return await _agrotutorContext.Plots.Include(p => p.Activities).FirstOrDefaultAsync(p => p.Id == plotId);
         }
 
-     
+        public async Task<Plot> GetPlotByMobileIdAndLocation(int mobileId, Position position)
+        {
+            var plot =  await _agrotutorContext.Plots
+                .Include(p => p.Activities)
+                .Include(p => p.Position)
+                .Where(p => p.MobileId == mobileId && Math.Abs(p.Position.Latitude - position.Latitude) < 0.00001 &&
+                            Math.Abs(p.Position.Longitude - position.Longitude) < 0.00001).FirstOrDefaultAsync();
+
+            return plot;
+        }
     }
 }
