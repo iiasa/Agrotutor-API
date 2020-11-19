@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using AgrotutorAPI.Data.Contract;
 using AgrotutorAPI.Domain;
@@ -78,6 +77,7 @@ namespace AgrotutorAPI.web.Controllers
 
             if (uploadImagesresult)
             {
+                finalPlot.Id = 0; // set Id to zero to successfully update Record.
                 await _plotRepository.AddPlotAsync(finalPlot);
                 if (! await _plotRepository.SaveAsync())
                     return StatusCode(500, "A problem happend while handling your request");
