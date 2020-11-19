@@ -16,7 +16,6 @@ namespace AgrotutorAPI.Dto
 
         public double NumberOfSeeds { get; set; }
 
-        public PlotDto Plot { get; set; }
         public int PlotId { get; set; }
         public string ParcelId { get; set; }
         public string ProductObtained { get; set; }

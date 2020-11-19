@@ -57,6 +57,8 @@ namespace AgrotutorAPI.web.Controllers
             if (plotToUpdate != null)
             {
                 // update plot
+                
+                await _plotRepository.PrepareForUpdate(plotToUpdate);
                 finalPlot = Mapper.Map(plotDto, plotToUpdate);
                 finalPlot.Id = plotToUpdate.Id;
 

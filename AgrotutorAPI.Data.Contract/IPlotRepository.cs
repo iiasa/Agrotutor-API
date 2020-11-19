@@ -12,6 +12,8 @@ namespace AgrotutorAPI.Data.Contract
         Task<bool> SaveAsync();
         Task<Plot> GetPlotByMobileIdAndLocation(int mobileId, Position position);
         void UpdatePlot(Plot plot);
+
+        Task PrepareForUpdate(Plot plot);
     }
 
 }

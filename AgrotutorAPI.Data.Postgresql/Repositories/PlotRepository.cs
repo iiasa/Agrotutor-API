@@ -23,6 +23,17 @@ namespace AgrotutorAPI.Data.Postgresql.Repositories
 
         }
 
+        public async Task PrepareForUpdate(Plot plot)
+        {
+            var delineationPositions = plot.Delineation.ToList();
+
+            plot.Delineation.RemoveAll(x => true);
+            plot.MediaItems.RemoveAll(x => true);
+            _agrotutorContext.Delineations.RemoveRange(delineationPositions);
+
+            await _agrotutorContext.SaveChangesAsync();
+        }
+
         public void UpdatePlot(Plot plot)
         {
             _agrotutorContext.Update(plot);
@@ -35,12 +46,22 @@ namespace AgrotutorAPI.Data.Postgresql.Repositories
 
         public async Task<IEnumerable<Plot>> GetPlotsAsync()
         {
-            return await _agrotutorContext.Plots.Include(p=>p.Activities).OrderBy(p => p.Name).ToListAsync();
+            return await _agrotutorContext.Plots
+                .Include(p => p.Activities)
+                .Include(p => p.Position)
+                .Include(p => p.Delineation)
+                .Include(p => p.MediaItems)
+                .OrderBy(p => p.Name).ToListAsync();
         }
 
         public async Task<Plot> GetPlotByIdAsync(int plotId)
         {
-            return await _agrotutorContext.Plots.Include(p => p.Activities).FirstOrDefaultAsync(p => p.Id == plotId);
+            return await _agrotutorContext.Plots
+                .Include(p => p.Activities)
+                .Include(p => p.Position)
+                .Include(p => p.Delineation)
+                .Include(p => p.MediaItems)
+                .FirstOrDefaultAsync(p => p.Id == plotId);
         }
 
         public async Task<Plot> GetPlotByMobileIdAndLocation(int mobileId, Position position)
