@@ -42,6 +42,11 @@ namespace AgrotutorAPI.Data.Postgresql.Repositories
         {
             foreach (var item in mediaItems)
             {
+                if (string.IsNullOrEmpty(item.DataBase64String))
+                {
+                    continue;
+                }
+
                 var imagePath = pathWithFolderName +@"\"+ item.Id+ ".png";
                 //Save the Byte Array as File.
                 byte[] bytes = Convert.FromBase64String(item.DataBase64String);
