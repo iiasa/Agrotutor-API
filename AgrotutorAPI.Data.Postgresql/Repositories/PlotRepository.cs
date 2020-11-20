@@ -26,10 +26,12 @@ namespace AgrotutorAPI.Data.Postgresql.Repositories
         public async Task PrepareForUpdate(Plot plot)
         {
             var delineationPositions = plot.Delineation.ToList();
+            var mediaItems = plot.MediaItems.ToList();
 
             plot.Delineation.RemoveAll(x => true);
             plot.MediaItems.RemoveAll(x => true);
             _agrotutorContext.Delineations.RemoveRange(delineationPositions);
+            _agrotutorContext.MediaItems.RemoveRange(mediaItems);
 
             await _agrotutorContext.SaveChangesAsync();
         }
