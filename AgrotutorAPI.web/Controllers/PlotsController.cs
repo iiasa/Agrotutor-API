@@ -60,7 +60,6 @@ namespace AgrotutorAPI.web.Controllers
                 
                 await _plotRepository.PrepareForUpdate(plotToUpdate);
                 finalPlot = Mapper.Map(plotDto, plotToUpdate);
-                finalPlot.Id = plotToUpdate.Id;
 
                 var uploadImagesresult2 = UploadImagesresult(finalPlot);
 
